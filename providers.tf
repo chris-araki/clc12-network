@@ -5,6 +5,11 @@ terraform {
       version = "5.69.0"
     }
   }
+  backend "s3" {
+    bucket = "clc12-network-christian"
+    key    = "network/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
