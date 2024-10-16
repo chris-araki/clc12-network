@@ -1,4 +1,4 @@
-name: Delete Infrastructure
+name: Delete Infra
 on:
   workflow_dispatch:
 
@@ -35,4 +35,4 @@ jobs:
           
         - name: Destroy resources jobs
           id: destroy
-          run: terraform destroy -auto-approve
+          run: terraform destroy --auto-approve
